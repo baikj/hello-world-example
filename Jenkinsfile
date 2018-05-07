@@ -12,7 +12,7 @@ pipeline {
           sh 'mvn clean install'
         }
 
-        withMaven(maven: 'Maven 3.3.3')
+        withMaven(maven: 'M3')
         sh 'mvn -Dmave.test.failure.ignore clean package'
       }
     }
